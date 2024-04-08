@@ -152,3 +152,64 @@ a {
   justify-content: center;
   align-items: center;
 }
+
+/* Buttons */
+
+.btn {
+  border-radius: 50px;
+  border: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+  height: 7rem;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  padding: 1rem;
+  cursor: pointer;
+}
+.btn--accent {
+  color: #ffffff;
+  background: var(--color-accent);
+}
+.btn--accent:hover {
+  background: #ec3000;
+}
+.btn--little {
+  display: inline-block;
+  width: auto;
+  font-size: 1.5rem;
+  padding: 0px 40px;
+}
+.btn--little:hover {
+  background: #ec3000;
+}
+.btn--outline {
+  border: 3px solid var(--color-headings);
+  background: none;
+  color: var(--color-headings);
+}
+.btn--outline:hover {
+  background-color: var(--color-headings);
+  color: #ffffff;
+}
+.btn--primary {
+  background-color: var(--color-headings);
+  color: #ffffff;
+}
+.btn--primary:hover {
+  background-color: #101073;
+}
+.btn--call-action {
+  width: 30rem;
+  font-size: 1.78rem;
+  background: var(--color-secondary);
+  color: #ffffff;
+}
+.btn--call-action:hover {
+  background-color: #00c8eb;
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.5rem;
+  }
+}
