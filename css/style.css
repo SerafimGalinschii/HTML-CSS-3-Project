@@ -386,3 +386,15 @@ a {
     font-size: 1.6rem;
   }
 }
+
+/* Grid component */
+
+.grid {
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--col-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
