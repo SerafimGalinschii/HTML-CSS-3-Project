@@ -179,7 +179,6 @@ a {
   text-transform: uppercase;
   padding: 3rem 3rem;
   cursor: pointer;
-  width: 100%;
 }
 .btn--accent {
   color: #ffffff;
@@ -200,6 +199,10 @@ a {
   border: 3px solid var(--color-headings);
   background: none;
   color: var(--color-headings);
+}
+.btn--stretched {
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 .btn--outline:hover {
   background-color: var(--color-headings);
@@ -435,5 +438,41 @@ a {
   }
   .testimonial .quote {
     margin-left: 6rem;
+  }
+}
+
+/* Call-out */
+.callout {
+  border-radius: 7px;
+  padding: 4rem;
+}
+.callout--primary {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+.callout__heading {
+  color: #fff;
+  margin-top: 0;
+  font-size: 4rem;
+}
+.callout .btn {
+  justify-self: center;
+  align-self: center;
+}
+.callout__content {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .callout .grid--col-2 {
+    grid-template-columns: 1fr auto;
+  }
+  .callout__content {
+    text-align: left;
+  }
+
+  .callout .btn {
+    justify-self: start;
+    margin: 0 4rem;
   }
 }
