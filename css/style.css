@@ -25,6 +25,7 @@ h2,
 h3 {
   color: var(--color-headings);
   margin-bottom: 1rem;
+  line-height: 1.1;
 }
 
 h1 {
@@ -201,8 +202,8 @@ a {
   color: var(--color-headings);
 }
 .btn--stretched {
-  padding-left: 6rem;
-  padding-right: 6rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
 }
 .btn--outline:hover {
   background-color: var(--color-headings);
@@ -406,9 +407,12 @@ a {
 .grid {
   display: grid;
 }
+.grid--1x2 {
+  grid-template-columns: repeat(1, 1fr);
+}
 
 @media screen and (min-width: 768px) {
-  .grid--col-2 {
+  .grid--1x2 {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -603,5 +607,30 @@ a {
 
   .nav__item {
     border: 0;
+  }
+}
+
+/* Hero */
+.hero {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+
+.hero__tagline {
+  font-size: 2rem;
+  color: #b9c3cf;
+  letter-spacing: 1px;
+  margin: 2rem 0 5rem;
+}
+.hero__image {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 0;
+  }
+  .hero__content {
+    text-align: left;
+    align-self: center;
   }
 }
