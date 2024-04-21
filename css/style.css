@@ -434,10 +434,10 @@ a {
   display: grid;
 }
 .grid--1x2 {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
 }
 .grid--1x3 {
-  grid-template-columns: repeat(3, minmax(48rem));
+  grid-template-columns: repeat(1, 1fr);
 }
 
 @media screen and (min-width: 768px) {
@@ -445,7 +445,7 @@ a {
     grid-template-columns: repeat(2, 1fr);
   }
   .grid--1x3 {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, auto);
   }
 }
 
@@ -694,7 +694,21 @@ a {
 
 .block-plans .grid {
   gap: 8rem 4rem;
+  margin: 12rem 0;
 }
 .block-plans .card {
   margin: 0 auto;
+}
+/* Block Features */
+.block-features {
+  gap: 4rem 2rem;
+  margin: 12rem 0;
+}
+.block-features .img {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+}
+.block-features:nth-of-type(even) .feature__content {
+  order: 2;
 }
