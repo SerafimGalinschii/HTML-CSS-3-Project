@@ -704,6 +704,9 @@ a {
   gap: 4rem 2rem;
   margin: 12rem 0;
 }
+.block-features:first-of-type {
+  margin-top: 6rem;
+}
 .block-features .img {
   width: 100%;
 }
@@ -711,4 +714,7 @@ a {
 }
 .block-features:nth-of-type(even) .feature__content {
   order: 2;
+}
+.block__header {
+  text-align: center;
 }
